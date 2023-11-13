@@ -8,14 +8,18 @@ output:
     toc_depth: 4
     toc_float:
       collapsed: true
-    code_folding: hide
 ---
-<center><h2><span style="color:#3399FF">Ecodiversa </span> <span style="color:green">Tropical</span></h2> </center>
+Este taller ha sido desarrollado por:
+
+- <a href="https://www.edslab.org/" target="_blank">**Prof. Melissa Guzmán**</a> (University of Southern California).
+
+- Juan Zuloaga director de ( <a href="https://www.ecodiversatropical.com/" target="_blank">Ecodiversa Tropical</a>).
+
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-setwd("C:/Talleres_Ecodiversa_R/IntroR_Configurar")
+setwd("C:/Talleres_R/IntroR_Configurar")
 
 ```
 ___
@@ -38,17 +42,17 @@ Inicie R Studio y abra un nuevo R Script utilizando el menu: *File* > *New File*
 
 # Configuración
 
-## ¿Cual es la carpeta en donde estoy actualmente?
+## ¿Cual es el directorio (carpeta o folder) en donde estoy actualmente?
 
-Cuando usted inicia una sesion, R se conecta por defecto a una carpeta en su computador. 
+Cuando usted inicia una sesion, R se conecta por defecto a un directorio en su computador. 
 
-Es bueno saber desde un comienzo en qué carpeta (directorio) está usted trabajando actualmente en R.
+Es bueno saber desde un comienzo en qué directorio está usted trabajando actualmente en R.
 
 Para esto vamos a utilizar las siguientes funciones: `getwd()`.
 
 `getwd()`:  es una función que le permite obtener la ruta completa de la carpeta actual de trabajo (wd, se refiere a 'working directory' por sus siglas en inglés). 
 
-En mi caso estamos ubicados en la carpeta que se muestra después de ejecutar el código. Para usted puede ser otra carpeta.
+En nuestro caso estamos ubicados en el directorio que se muestra después de ejecutar el código. Para usted puede ser otro directorio.
 
 
 ```{r }
@@ -83,18 +87,18 @@ dir.create("C:/Intro_Test")
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #a94442; background-color: #f2dede; border-color: #ebccd1;">
 **<span style="color:red">Avisos!</span>** 
 
-Si el directorio ya existe usted puede obtener este mensaje:
+Si el directorio ya existe usted obtendrá este mensaje:
 
-<span style="color:red">"'C:\\Intro_Test'" already exists</span> 
+<span style="color:red">"'C:\Intro_Test'" already exists</span> 
 
-... No se precopupe, su carpeta no se borrará...
+... No se precopupe, su directorio no se borrará...
 
 </div>
 
 
 ## Quiero configurar una carpeta de trabajo
 
-Si quiere configurar esta carpeta como directiorio de trabajo 'C:/Intro_Test' al que R siempre busca para cargar o guardar archivos, entonces utilice la siguiente función:
+Si quiere configurar esta carpeta como directiorio de trabajo `C:/Intro_Test` al que R siempre buscará para cargar o guardar archivos, entonces utilice la siguiente función:
 
 `setwd()`: configurar el directorio de trabajo
 
@@ -103,7 +107,7 @@ Si quiere configurar esta carpeta como directiorio de trabajo 'C:/Intro_Test' al
 
 setwd("C:/Intro_Test")
 
-getwd() # obtenga nuevamente el directorio en el cual está trabajando
+getwd() # Confirme que el directorio en el cual está trabajando es el que configuró
 
 ```
 
@@ -141,11 +145,11 @@ list.dirs("C:/Intro_Test")
 ```
 
 
-# Salvar sus códigos
+# Salvar sus códigos en un archivo individual
 
 Para salvar su archivo pude utilizar el menu:
 
-File > Save as > "mi_primer_codigo.R" (no utilice tildes y use barra al piso para separar palabras)
+File > Save as > "mi_primer_codigo.R" (no utilice tildes y use en lo posible barra al piso para separar palabras)
 
 
 ![](./Figures/save_script1.png){width=50% height="50%"}
@@ -217,7 +221,7 @@ La **ruta relativa** (relative paths, en inglés) contiene la localización **PA
 
 Es muy útil cuando usted ha definido la carpeta de trabajo al principio de su código. Recuerda? Cuando utilizó la función `setwd()`.
 
-Por ejemplo, "./" (en este caso usted ha configurado previamente la carpeta base de su proyecto, entonces no necesita escribir toda la ruta).
+Por ejemplo, usted puede utilizar este código para listar los archivos  `list.files("./")` (en este caso usted ha configurado previamente el directorio base de su proyecto, entonces no necesita escribir toda la ruta).
 
 
 Las principales ventajas de utilizar la ruta relativa son:
@@ -225,14 +229,9 @@ Las principales ventajas de utilizar la ruta relativa son:
 + puede ahorrar tiempo y evitar errorres escribiendo nuevamente toda la ruta en cada línea de su código
 + cuando comparte su código, sus colegas lo pueden reproducir fácilmente. 
 
-En el código que se presenta abajo ya no tiene que escribir todo la ruta, es suficiente  con "./" (es decir la ruta relativa).
-
-```{r warning=FALSE}
-
-#list.files("./")
+En el código que se presenta abajo ya no tiene que escribir todo la ruta, es suficiente  con indicar la ruta relativa (`"./"`).
 
 
-```
 
 
 ## Ejercicio
@@ -248,9 +247,25 @@ Explore la diferencia entre `list.files()` y `list.dirs()`.
 </div>
 
 
-
 <br>
 
 
+# Siguiente paso
 
+
+Esperamos que este tutorial le haya sido de ayuda para empezar a enterder cómo funciona R y RStudio, así como el potencial que tiene para sus futuros proyectos.
+
+Practique bastante y proceda con otros tutoriales que ofrecemos.
+
+
+Si tiene comentarios o sugerencias nos puede escribir a ecodiversatropical@gmail.com.
+
+
+```{r echo = FALSE, results='hide'}
+setwd("C:/Talleres_R/IntroR_Configurar")
+```
+
+::: {align="center"}
+\###########################################################################
+:::
 
