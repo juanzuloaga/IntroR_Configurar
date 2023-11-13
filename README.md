@@ -1,5 +1,5 @@
 # Configurar R 
-Ene ste taller (Configurar R) usted aprenderá a crear códigos en R que le permitan implementar funciones básicas para interactuar con su computador.
+Ene ste taller [Talller para Configurar R](https://juanzuloaga.github.io/IntroR_Configurar/IntroR_Configurar.html) usted aprenderá a crear códigos en R que le permitan implementar funciones básicas para interactuar con su computador.
 
 # Objetivos
 Al final de este taller usted podrá:
